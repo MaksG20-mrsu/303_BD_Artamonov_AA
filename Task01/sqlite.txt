@@ -1,0 +1,15 @@
+Версия SQLite: 3.54.1 (Windows x64).
+
+Для запуска консольного клиента используется sqlite3.exe. Для базы на диске указывается имя файла, например sqlite3.exe lab.db. SQLite создаёт файл при записи. Для временной базы в памяти используется :memory:.
+
+Режимы вывода по команде .mode --list:
+ascii box c column count csv html insert jatom jobject json line list markdown off psql qbox quote split table tabs tcl batch tty
+
+Проверка в консоли:
+.mode box
+SELECT sqlite_version() AS version, 2 + 3 AS result;
+Результат: version = 3.54.1, result = 5.
+
+.mode json
+SELECT 42 AS result;
+Результат: [{"result":42}]
